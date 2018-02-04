@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#homescreen {
+	background-image: url("../assets/background.jpg");
+	background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+  min-height:100%;
+  width:auto;
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-template-rows: 25% auto 50px auto;
+}
+
+#blankHeader {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+}
+
+.mainLogo {
+  grid-column:2 / span 2;
+  grid-row: 2 / span 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.logo {
+  width: 60vmin;
+  height: auto;
+}
